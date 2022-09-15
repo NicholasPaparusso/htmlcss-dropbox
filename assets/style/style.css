@@ -46,6 +46,18 @@ header{
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1200px) {
+.page-header a{
+  font-size: 12px;
+}}
+
+@media screen and (max-width: 1200px) {
+  .page-header .menu-container {
+   justify-content: center;
+  }}
+
+
+
 .page-header{
   display: flex;
   align-items: center;
@@ -99,13 +111,14 @@ header ul li a:hover{
 }
 
 .jumbotron .col p{
-  padding-bottom: 30px;
   max-width: 30%;
+  padding-bottom: 30px;
   color: #343434;
 }
 
 .jumbotron .col a{
   max-width: 30%;
+  text-align: center;
 }
 
 .jumbotron .col{
@@ -139,22 +152,23 @@ header ul li a:hover{
   font-weight: 800;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .jumbotron .col img{
     display: none;
-}
-@media screen and (max-width: 1000px) {
-  .jumbotron .col p,a{
-    max-width: 100%;
-}
+}}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  .jumbotron .col p,a{
+  max-width: 100%;
+}}
+
+@media screen and (max-width: 1200px) {
   .jumbotron .col{
    display: flex;
    flex-direction: row;
    gap: 30px;
    justify-content: space-between
-  }
+  }}
 
 
 /* Jumbo */
