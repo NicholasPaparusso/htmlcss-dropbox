@@ -1,0 +1,26 @@
+/* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+/* Utility */
+
+.container{}
+
+.debug{
+  border: 2px solid black;
+  background-color: rgba(180, 20, 20, 0.2);
+}
+
+
+
+/* Utility */
+/* Header */
+/* Header */
+/* Main */
+/* Main */
+/* Footer */
+/* Footer */
