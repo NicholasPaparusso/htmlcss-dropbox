@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 /* General */
 /* Utility */
 
@@ -15,10 +18,147 @@
   background-color: rgba(180, 20, 20, 0.2);
 }
 
+.button-blue{
+  background-color: #0061ff;
+  color: white;
+  padding: 5px 15px;
+}
+a{
+  text-decoration: none;
+}
+.button-bordered{}
 
-
+.button-blue:hover{
+  box-shadow: 0 1px 5px lightgrey;
+  background-color: #0062ffb0;
+  border-bottom: none;
+}
 /* Utility */
 /* Header */
+header{
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 420;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 10px;
+}
+
+header .menu-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header ul li a{
+  color:#343434;
+  margin: 0 20px;
+  padding-bottom: 28px;
+}
+
+header .logo{
+  margin: 0 40px 0 20px;
+}
+
+header ul li a:hover{
+  border-bottom: 2px solid #343434;
+}
+
+/* Jumbo */
+.jumbotron{
+  margin-top: 80px;
+  background-color:#b4d0e7;
+  max-height: 750px
+}
+
+.jumbo-container{
+  position: relative;
+  width: 63%;
+  margin: 0 auto;
+}
+
+.jumbotron h1{
+  padding: 70px 0 70px 0px;
+  font-size: 4vw;
+  font-weight: 800;
+  
+}
+
+.jumbotron .col p{
+  padding-bottom: 30px;
+  max-width: 30%;
+  color: #343434;
+}
+
+.jumbotron .col a{
+  max-width: 30%;
+}
+
+.jumbotron .col{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.jumbotron .col img{
+  max-width: 70%;
+  min-width: 500px;
+  position: absolute;
+  top: 47.5% ;
+  right: 0 ;
+}
+
+.jumbo-container .button-blue{
+  width: fit-content;
+  padding: 0.76em 1em;
+  margin-bottom: 35px ;
+  color: white;
+}
+
+.jumbotron a{
+ color: black;
+}
+
+.jumbotron .anchor{
+  margin: 40px 0 20px 0;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1100px) {
+  .jumbotron .col img{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+  .jumbotron .col p,a{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .jumbotron .col{
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   justify-content: space-between
+  }
+
+
+/* Jumbo */
+
 /* Header */
 /* Main */
 /* Main */
