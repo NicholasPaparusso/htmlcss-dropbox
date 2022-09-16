@@ -36,27 +36,16 @@ a{
 /* Utility */
 /* Header */
 header{
+  background-color: white;
   height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 420;
+  z-index: 99;
   width: 100%;
   margin-bottom: 100px;
 }
-
-@media screen and (max-width: 1200px) {
-.page-header a{
-  font-size: 12px;
-}}
-
-@media screen and (max-width: 1200px) {
-  .page-header .menu-container {
-   justify-content: center;
-  }}
-
-
 
 .page-header{
   display: flex;
@@ -66,14 +55,22 @@ header{
 }
 
 header .menu-container{
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
 header ul{
-  display: flex;
   list-style: none;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+header ul li {
+  display: inline;
 }
 
 header ul li a{
@@ -84,17 +81,34 @@ header ul li a{
 
 header .logo{
   margin: 0 40px 0 20px;
+  line-height: 15px;
 }
 
 header ul li a:hover{
   border-bottom: 2px solid #343434;
 }
 
+header .checkbtn{
+  font-size: 30px;
+  color:#343434;
+  cursor: pointer;
+  display: none;
+  width: 100%;
+  text-align:right;
+  margin-right: 20px;
+}
+
+header #check{
+  display: none;
+}
+
 /* Jumbo */
+
+
 .jumbotron{
   margin-top: 80px;
   background-color:#b4d0e7;
-  max-height: 750px
+  max-height:750px
 }
 
 .jumbo-container{
@@ -118,7 +132,6 @@ header ul li a:hover{
 
 .jumbotron .col a{
   max-width: 30%;
-  text-align: center;
 }
 
 .jumbotron .col{
@@ -152,25 +165,6 @@ header ul li a:hover{
   font-weight: 800;
 }
 
-@media screen and (max-width: 1200px) {
-  .jumbotron .col img{
-    display: none;
-}}
-
-@media screen and (max-width: 1200px) {
-  .jumbotron .col p,a{
-  max-width: 100%;
-}}
-
-@media screen and (max-width: 1200px) {
-  .jumbotron .col{
-   display: flex;
-   flex-direction: row;
-   gap: 30px;
-   justify-content: space-between
-  }}
-
-
 /* Jumbo */
 
 /* Header */
@@ -178,3 +172,95 @@ header ul li a:hover{
 /* Main */
 /* Footer */
 /* Footer */
+
+/* Media query */
+
+/* Header */
+  
+  @media screen and (max-width: 1200px) {
+  header ul li a{
+    font-size: 14px;
+    margin: 0 10px;
+  }
+    .page-header .menu-container {
+     justify-content: center;
+  }
+  .page-header .logo{
+    margin: 0 10px 0 5px;
+   }
+  header ul li a:hover{
+    border-bottom: 2px solid white;
+  }
+  }
+  
+  @media screen and (max-width: 920px){
+    header .checkbtn{
+     display: block;
+    }
+    header ul{
+      scroll-behavior: smooth;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #2c3e50;
+      top: 80px;
+      left: 0;
+      transition: all .5s;
+      text-align: center;
+     display: block;
+    }
+
+  header ul li{
+    line-height: 8;
+  }
+  header ul li a{
+    padding: 30px 50px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+  .button-blue{
+   background-color:#2c3e50;
+  }
+  .button-blue:hover{
+    box-shadow: 0 1px 5px #2c3e50;
+    background-color: #2c3e50;
+    border-bottom: 2px solid white ;
+  }
+
+  header .logo{
+    position: relative;
+    left: calc(50% - 60px);
+  }
+  }
+
+  @media screen and (max-width: 720px){
+    header ul li a{
+      padding: 30px 20px;
+      text-align: center;
+      display: block;
+      color: white;
+      font-size: 16px;
+    }}
+
+/* Header */
+
+/* JUMBO */
+@media screen and (max-width: 1200px) {
+  .jumbotron .col img{
+    display: none;
+}
+.jumbotron .col p,a{
+  max-width: 100%;
+  text-align: center;
+}
+.jumbotron .col{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between
+ }
+}
+/* JUMBO */
+/* Media query */
