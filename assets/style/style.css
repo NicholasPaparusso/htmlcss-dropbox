@@ -30,6 +30,10 @@ a{
   text-align: center;
 }
 
+.button-bordered:hover{
+  box-shadow: 1px 1px 2px #454545;
+}
+
 .button-blue:hover{
   box-shadow: 0 1px 5px lightgrey;
   background-color: #0062ffb0;
@@ -41,6 +45,11 @@ a{
 .debug{
   border: 2px solid black;
   background-color: rgba(180, 20, 20, 0.2);
+}
+
+.container{
+  width: 55%;
+  margin: 0 auto;
 }
 
 /* Utility */
@@ -168,10 +177,6 @@ header ul li a:hover{
 
 /* Offers Section */
 
-main .offers{
- width: 55%;
- margin: 0 auto;
-}
 main label{
   display: flex;
   justify-content: center;
@@ -186,7 +191,7 @@ main .check{
   margin-left: 20px;
 }
  
-main .col.container{
+main .col-container{
   display: flex;
   border: 1px;
   
@@ -328,9 +333,7 @@ main .row.front span{
 
 /* Partner Section */
 
-main .partner-container{
-  width: 55%;
-  margin: 0 auto;
+main .partner{
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -369,46 +372,162 @@ main .partner .col-text span {
 
 /* Operation Section */
 
-main .row-container{
-  width: 55%;
-  margin: 0 auto; 
+main .operation .row{
+  display: flex;
+  flex-flow:wrap;
 }
 
 main .operation h2{
-  width: 55%;
-  margin: 0 auto;
   font-weight: 600;
 }
 
-main .row-container .col{
+main .row .col{
   width: calc((100% /3 ) - 62px);
-  float: left;
   margin-right: 42px;
 }
 
-main .row-container .col:first-of-type{
+main .row .col:first-of-type{
   margin-left: 20px;
 }
-main .row-container .col:nth-child(4) {
+main .row .col:nth-child(4) {
   margin-left: 20px;
 }
 
-main .row-container .col img{
+main .row .col img{
   width: 100%
 }
 
-main .row-container .col h4{
+main .row .col h4{
   font-size: 1.3vw;
   font-weight: 600;
   padding: 0 0 20px 0;
 }
 
-main .row-container .col p{
+main .row .col p{
   font-size: 1em;
   color: #454545;
 }
 /* Operation Section */
 
+/* Dropbox Business */
+
+main .business .img-container{
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+}
+
+main .business h2{
+    width: 60%;
+    margin-top: 40px;
+}
+
+ main .business a{
+    color: blue;
+    padding-left: 30px;
+}
+
+main .business a:hover{
+    text-decoration: underline;
+}
+
+main .business .col{
+  width: calc(100% / 6);
+  height: 320px;
+}
+
+main .business .col.big{
+  width: calc(100% / 3) ;
+  height: 640px;
+}
+main .business .col .box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .business .col .box svg{
+  width: 61%;
+  text-align: center;
+  fill: white;
+ }
+
+  main .business .col.big .box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 50px 0 25px 50px;
+    height: auto;
+}
+
+main .business .col.big .box svg{
+  fill: black;
+  width: 45%;
+}
+
+main .business .col.big .line{
+   
+  border-bottom: 1px solid #b1b1b1;
+  width: 20%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+main .business .col.big p{
+  font-size: 1em;
+  padding: 0 50px;
+  color: #454545;
+  margin-bottom: 50px;
+}
+
+main .business .col.big span{
+  font-size: 1em;
+  padding-left: 50px;
+  color: #454545;
+  margin-top: 20px;
+}
+
+main .business .small-left .box:nth-child(1){
+  background-color: #a2d39b;
+  border-top: 15px solid #d1e9cd ;
+  border-right: 15px solid #d1e9cd ;
+  border-bottom: 15px solid #d1e9cd ;
+}
+
+main .business .small-left .box:nth-child(2){
+  background-color: #61082b;
+}
+
+main .business .small-left2 .box:nth-child(1){
+  background-color: #0093ce;
+}
+
+main .business .small-left2 .box:nth-child(2){
+  background-color: #ff1c1c;
+}
+
+main .col.big{
+  background-color: #f5f5f5;
+}
+
+main .business .small-right .box:nth-child(1){
+  background-color: #d5001f;
+}
+
+main .business .small-right .box:nth-child(2){
+  background-color: #b4d0e7;
+}
+
+main .business .small-right2 .box:nth-child(1){
+  background-color: #0d2481;
+}
+
+main .business .small-right2 .box:nth-child(2){
+  background-color: #ffd830;
+}
+/* Dropbox Business */
 
 /* Main */
 /* Footer */
