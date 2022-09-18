@@ -579,7 +579,6 @@ main .faq label{
   width: 100%;
   text-align: left  ;
   padding: 40px 0px;
-  margin-right: ;
   border: none;
   font-size: 1em;
   font-weight: 600;
@@ -615,14 +614,14 @@ main .faq input:checked + label + .content {
 }
 
 main .faq label::after {
-  margin-left: 150px ;
+  margin-left: 330px;
 	font-family: "Font Awesome 6 Free";
 	content: '\f078';
 	font-weight: bold;
 }
 
 main .faq input:checked + label::after {
-  margin-left: 150px;
+  margin-left: 330px;
 	content: '\f077';
 }
 
