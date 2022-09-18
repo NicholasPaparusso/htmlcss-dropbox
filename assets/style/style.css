@@ -572,34 +572,62 @@ main .faq h2{
   padding: 150px 0 70px 0 ;
 }
 
-main .faq .accordion{
+main .faq label{
+  display: block;
   background-color: white;
   cursor: pointer;
   width: 100%;
-  text-align: left;
+  text-align: left  ;
   padding: 40px 0px;
-  outline: none;
+  margin-right: ;
   border: none;
   font-size: 1em;
   font-weight: 600;
   border-top: 0.5px solid #454545;
 }
-main .faq .accordion:nth-of-type(3){
+
+main .faq .line{
   border-bottom: 0.5px solid #454545;
 }
-main .faq .panel{
-  padding: 0 20px;
+
+main .faq .content{
   background-color: white;
   display: none;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
-main .faq .accordion:hover {
+main .faq label:hover {
   background-color: rgb(235, 235, 235);
 }
 
-main .faq .accordion:enabled .panel {
+main .faq input{
+  display: none;
+}
+
+main .faq input + label + .content{
+  display: none;
+}
+
+main .faq input:checked + label + .content {
   display: block;
+  background-color: rgb(235, 235, 235);
+}
+
+main .faq label::after {
+  margin-left: 150px ;
+	font-family: "Font Awesome 6 Free";
+	content: '\f078';
+	font-weight: bold;
+}
+
+main .faq input:checked + label::after {
+  margin-left: 150px;
+	content: '\f077';
+}
+
+main .faq input:checked + label {
+  background-color: rgb(235, 235, 235);
 }
 /* FAQ */
 
