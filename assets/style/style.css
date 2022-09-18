@@ -546,8 +546,10 @@ main .free{
 
 main .free-try h2{
   padding-top: unset;
+  padding-bottom: unset;
   color: #61082b;
   width: 60%;
+  margin: 130px 50px 130px 0;
   margin-top: 130px;
   margin-right: 50px;
 }
@@ -555,12 +557,102 @@ main .free-try h2{
 main .free .button-bordered{
   border: 0px;
   background-color: white;
-  margin-top: 30px;
+  margin-bottom: 40px;
   padding: 10px 20px;
 }
 /* Free try */
 
+/* FAQ */
+main .faq{
+  padding-bottom: 150px;
+}
+
+main .faq h2{
+  padding: unset;
+  padding: 150px 0 70px 0 ;
+}
+
+main .faq .accordion{
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 40px 0px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  border-top: 0.5px solid #454545;
+}
+main .faq .accordion:nth-of-type(3){
+  border-bottom: 0.5px solid #454545;
+}
+main .faq .panel{
+  padding: 0 20px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+main .faq .accordion:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+main .faq .accordion:enabled .panel {
+  display: block;
+}
+/* FAQ */
+
 /* Footer */
+
+footer{
+  background-color: #000000;
+  padding: 100px 0 40px 0;
+}
+
+ footer .top{
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ footer .top h5{
+  color: white;
+  font-size: 22px;
+  padding-bottom: 20px;
+ }
+
+ footer .top ul li{
+  margin-bottom: 15px;
+ }
+
+ footer .top ul a{
+  color: white;
+ }
+
+ footer .top ul a:hover{
+  text-decoration: underline;
+ }
+
+footer .bottom{
+  padding-top: 100px;
+  width: 63%;
+  margin: 0 auto;
+}
+
+footer .bottom .line{
+  border: 1px solid #858282;
+  margin-bottom: 40px;
+  width: 10%;
+}
+
+footer .bottom a{
+  color: #858282;
+}
+
+
 /* Footer */
 
 /* Media query */
