@@ -177,9 +177,58 @@ header ul li a:hover{
 
 /* Offers Section */
 
-main label{
-  display: flex;
-  justify-content: center;
+main .offers .round{
+  position: relative;
+}
+
+main .offers .round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 20px;
+  position: absolute;
+  top: 250px;
+  width: 28px;
+}
+
+main  .offers .round label:nth-of-type(2){
+  left: 230px;
+}
+ 
+main  .offers .round span{
+  margin-left: 20px;
+  position: absolute;
+  left: 40px;
+  top: 253px;
+}
+
+main  .offers .round span:nth-of-type(2){
+  position: absolute;
+  left: 245px;
+}
+
+main .offers .round label:after {
+  border: 2px solid green;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+main  .offers .round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+main  .offers .round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
 }
 
 main  h2{
@@ -187,23 +236,26 @@ main  h2{
   font-size: 2vw;
 }
  
-main .check{
+main  .offers .check{
   margin-left: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
  
-main .col-container{
+main  .offers .col-container{
   display: flex;
   border: 1px;
-  
 }
 
-main .col.front { 
+main  .offers .col{ 
   max-width: 30%;
   margin: 50px 20px;
   border: 1px solid #b1b1b1 ;
 }
 
-main .col.front h6{
+main  .offers .col h6{
   text-align: center;
   font-weight: 400;
   font-size: 0.9em;
@@ -212,59 +264,59 @@ main .col.front h6{
   padding-left: 0px;
 }
 
-main .col.front h4, li{
+main .offers .col h4, li{
  padding: 0 30px;
 }
-main .col.front span{
+main .offers .col span{
   padding: 0 30px;
 }
-main .col.front h4{
+main .offers .col h4{
   font-size: 1.3vw;
   font-weight: 600;
   padding-top: 30px;
   padding-bottom: 15px;
 }
 
-main .col.front span{
+main .offers .col span{
  color: #454545;
  font-size: 0.9em;
 }
 
-main .col.front ul{
+main .offers .col ul{
   list-style: none ;
   margin-top: 40px;
 }
 
-main .col.front ul li{
+main .offers .col ul li{
   padding-bottom: 18px;
   font-size: 0.9em;
 }
 
-main .col.front .button-blue{
+main .offers .col .button-blue{
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin: 50px 30px 30px ;
 }
 
-main .col.front a{
+main .offers .col a{
   text-decoration: none;
   color: blue;
   font-size: 0.9em;
 }
 
-main .col.front a:hover{
+main .offers .col a:hover{
   text-decoration: underline;
 }
 
-main .col.front .line{
+main .offers .col .line{
   margin-top: 40px;
   border-bottom: 1px solid #b1b1b1;
   width: 17%;
   margin-left: 30px;
 }
 
-main .col.front .main-point{
+main .offers .col .main-point{
   font-weight: 600;
   margin: 40px 0 0;
   border: 0px;
@@ -272,11 +324,12 @@ main .col.front .main-point{
   padding-left: 30px;
 }
 
-main .col.front .diff-span{
+main .offers .col .diff-span{
   padding: 0 0 0 30px;
 }
 
-main .row.front {
+
+main  .offers .row.front {
   border: 1px solid #b1b1b1 ;
   display: flex;
   flex-direction: column;
@@ -287,7 +340,7 @@ main .row.front {
   
 }
 
-main .row.front h6{
+main .offers .row.front h6{
   text-align: center;
   font-weight: 400;
   font-size: 0.9em;
@@ -296,36 +349,36 @@ main .row.front h6{
   padding-left: 0px;
 }
 
-main .row.front h4{
+main .offers .row.front h4{
   font-size: 1.3vw;
   font-weight: 600;
   padding-top: 30px;
   padding-bottom: 15px;
 }
 
-main .row.front .button-blue{
+main  .offers .row.front .button-blue{
   width: fit-content;
   position: absolute;
   right: 30px;
   bottom: 125px;
 }
 
-main .row.front h5{
+main  .offers .row.front h5{
   font-size: 15px;
   font-weight: 600;
   padding-bottom: 50px;
 }
 
-main .row.front span{
+main  .offers .row.front span{
   font-size: 0.9em;
   padding-bottom: 30px;
   color: #454545;
 }
 
-main .row.front  h5, h4{
+main  .offers .row.front  h5, h4{
   padding-left: 30px;
 }
-main .row.front span{
+main  .offers .row.front span{
   padding-left: 30px;
 }
 
@@ -433,12 +486,12 @@ main .business a:hover{
 
 main .business .col{
   width: calc(100% / 6);
-  height: 320px;
+  height: 16.7vw;
 }
 
 main .business .col.big{
   width: calc(100% / 3) ;
-  height: 640px;
+  height: 33.4vw;
 }
 main .business .col .box{
   width: 100%;
@@ -450,7 +503,6 @@ main .business .col .box{
 
 main .business .col .box svg{
   width: 61%;
-  text-align: center;
   fill: white;
  }
 
@@ -458,7 +510,7 @@ main .business .col .box svg{
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    padding: 50px 0 25px 50px;
+    padding: 50px 0 10px 50px;
     height: auto;
 }
 
@@ -472,40 +524,62 @@ main .business .col.big .line{
   border-bottom: 1px solid #b1b1b1;
   width: 20%;
   margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
+main .business .text{
+  overflow-y: scroll;
+  max-height: 140px;
+}
 main .business .col.big p{
   font-size: 1em;
   padding: 0 50px;
   color: #454545;
-  margin-bottom: 50px;
+  margin-bottom: 8px;
 }
 
 main .business .col.big span{
   font-size: 1em;
   padding-left: 50px;
   color: #454545;
-  margin-top: 20px;
+  margin-top: 15px;
 }
+
 
 main .business .small-left .box:nth-child(1){
   background-color: #a2d39b;
-  border-top: 15px solid #d1e9cd ;
-  border-right: 15px solid #d1e9cd ;
-  border-bottom: 15px solid #d1e9cd ;
+ 
+}
+main .business .small-left :active.box:nth-child(1){
+  border: 15px solid #d1e9cd;
+  cursor: pointer;
 }
 
 main .business .small-left .box:nth-child(2){
   background-color: #0093ce;
 }
 
+main .business .small-left :active.box:nth-child(2){
+  border: 15px solid #59a8c8;
+  cursor: pointer;
+}
+
 main .business .small-left2 .box:nth-child(1){
   background-color: #61082b;
 }
 
+main .business .small-left2 :active.box:nth-child(1){
+  border: 15px solid #795a66;
+  cursor: pointer;
+}
+
 main .business .small-left2 .box:nth-child(2){
   background-color: #ff1c1c;
+}
+
+main .business .small-left2 :active.box:nth-child(2){
+  border: 15px solid #f56e6e;
+  cursor: pointer;
 }
 
 main .col.big{
@@ -516,17 +590,38 @@ main .business .small-right .box:nth-child(1){
   background-color: #d5001f;
 }
 
+main .business .small-right :active.box:nth-child(1){
+  border: 15px solid #ce5365;
+  cursor: pointer;
+}
+
 main .business .small-right .box:nth-child(2){
   background-color: #0d2481;
+}
+
+main .business .small-right :active.box:nth-child(2){
+  border: 15px solid #576397;
+  cursor: pointer;
 }
 
 main .business .small-right2 .box:nth-child(1){
   background-color: #b4d0e7;
 }
 
+main .business .small-right2 :active.box:nth-child(1){
+  border: 15px solid #cfd5da;
+  cursor: pointer;
+}
+
 main .business .small-right2 .box:nth-child(2){
   background-color: #ffd830;
 }
+
+main .business .small-right2 :active.box:nth-child(2){
+  border: 15px solid #eedb89;
+  cursor: pointer;
+}
+
 /* Dropbox Business */
 
 /* Main */
@@ -583,6 +678,7 @@ main .faq label{
   font-size: 1em;
   font-weight: 600;
   border-top: 0.5px solid #454545;
+
 }
 
 main .faq .line{
@@ -613,16 +709,18 @@ main .faq input:checked + label + .content {
   background-color: rgb(235, 235, 235);
 }
 
-main .faq label::after {
-  margin-left: 330px;
+main .faq label::after{
 	font-family: "Font Awesome 6 Free";
 	content: '\f078';
 	font-weight: bold;
+  float: right;
+  margin-right: 20px;
 }
 
-main .faq input:checked + label::after {
-  margin-left: 330px;
+main .faq input:checked + label::after{
 	content: '\f077';
+  float: right;
+  margin-right: 20px;
 }
 
 main .faq input:checked + label {
@@ -740,7 +838,7 @@ footer .bottom a{
     line-height: 6;
   }
   header ul li a{
-    padding: 0px 50px;
+    padding: 0px 150px;
     text-align: center;
     display: block;
     color: white;
@@ -764,23 +862,34 @@ footer .bottom a{
   }
   }
 
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 950px){
     header ul li a{
-      padding: 0 100px;
+      padding: 0 150px;
       text-align: center;
       display: block;
       color: white;
       font-size: 13px;
     }}
 
-    @media screen and (max-width: 850px){
-      header ul li a{
-        padding: 0 50px;
-        text-align: center;
-        display: block;
-        color: white;
-        font-size: 12px;
-      }}
+
+      @media screen and (max-width: 850px){
+        header ul li a{
+          padding: 0 100px;
+          text-align: center;
+          display: block;
+          color: white;
+          font-size: 12px;
+        }}
+
+        
+        @media screen and (max-width: 700px){
+          header ul li a{
+            padding: 0 50px;
+            text-align: center;
+            display: block;
+            color: white;
+            font-size: 12px;
+          }}        
 /* Header */
 
 /* JUMBO */
